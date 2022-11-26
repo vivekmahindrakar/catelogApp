@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home_page.dart';
 
 import 'package:matcher/matcher.dart';
 
@@ -12,13 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("We won the Battle"),
-          ),
-        ),
+      title: "Be The Change",
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange,
       ),
+      home: HomePage(),
     );
   }
 }
