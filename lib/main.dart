@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:flutter_application_1/utils/routes/myroutes.dart';
+import 'package:flutter_application_1/utils/themes/theme.dart';
 
 import 'package:matcher/matcher.dart';
 
@@ -18,9 +19,7 @@ class MyApp extends StatelessWidget {
       title: "Be The Change",
       themeMode: ThemeMode.light,
       home: HomePage(),
-      theme: ThemeData(
-        primarySwatch: Colors.lightBlue,
-      ),
+      theme: MyTheme.lightTheme(context),
       initialRoute: MyRoutes.HomePage,
       routes: {
         MyRoutes.LoginPage: (context) => const LoginPage(),

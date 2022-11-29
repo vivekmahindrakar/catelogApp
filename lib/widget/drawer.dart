@@ -13,7 +13,7 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Color.fromARGB(255, 255, 255, 245),
+        color: Color.fromARGB(255, 255, 255, 255),
         child: ListView(
           children: [
             DrawerHeader(
@@ -23,7 +23,7 @@ class MyDrawer extends StatelessWidget {
                 accountName: Text(accName),
                 accountEmail: Text(email),
                 decoration:
-                    BoxDecoration(color: Color.fromARGB(255, 255, 255, 245)),
+                    BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)),
               ),
               margin: EdgeInsets.zero,
               padding: EdgeInsets.zero,
