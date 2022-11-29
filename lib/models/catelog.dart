@@ -4,9 +4,9 @@ class Items {
   final String desc;
   final num price;
   final String color;
-  final String imageUrl;
+  final String image;
 
-  Items(this.id, this.name, this.desc, this.price, this.color, this.imageUrl);
+  Items(this.id, this.name, this.desc, this.price, this.color, this.image);
 }
 
 final product = [
