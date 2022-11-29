@@ -108,11 +108,11 @@ class _LoginPageState extends State<LoginPage> {
                                   BorderRadius.circular(tapped ? 100 : 8),
                             ),
                             child: tapped
-                                ? Icon(
+                                ? const Icon(
                                     Icons.done,
                                     color: Colors.white,
                                   )
-                                : Text(
+                                : const Text(
                                     "Login",
                                     style: TextStyle(
                                         fontSize: 18, color: Colors.white),
