@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Material(
-          child: (Catelog.Items != null && Catelog.Items.isNotEmpty)
+          child: (Catelog.Items.isNotEmpty)
               ? ListView.builder(
                   itemCount: Catelog.Items.length,
                   itemBuilder: ((context, index) {
