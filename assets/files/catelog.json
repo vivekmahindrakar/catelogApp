@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Iphone 12 pro",
+            "desc": "Apple Iphone 12th gen",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Iphone 13",
+            "desc": "Apple Iphone 13th gen",
+            "price": 899,
+            "color": "#3a507a",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Iphone 13 pro",
+            "desc": "Apple Iphone 13th gen",
+            "price": 999,
+            "color": " #000000",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Iphone 13 mini",
+            "desc": "Apple Iphone 13th gen",
+            "price": 799,
+            "color": "#A50011",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Iphone 13 mini",
+            "desc": "Apple Iphone 13th gen",
+            "price": 800,
+            "color": "#215E7C",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Iphone 12 mini",
+            "desc": "Apple Iphone 12th gen",
+            "price": 850,
+            "color": "#043458",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Iphone 12",
+            "desc": "Apple Iphone 12th gen",
+            "price": 899,
+            "color": "#FBF7F4",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Iphone 11 pro",
+            "desc": "Apple Iphone 11th gen",
+            "price": 999,
+            "color": "#4E5851",
+            "image": "https://m.media-amazon.com/images/I/71xkMA+gvYL._SL1500_.jpg"
+        }
+    ]
+}
