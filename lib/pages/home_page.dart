@@ -126,7 +126,8 @@ class CatelogItem extends StatelessWidget {
                   child: "Buy".text.color(Colors.white).make(),
                   style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(MyTheme.darkBlue)),
+                          MaterialStateProperty.all(MyTheme.darkBlue),
+                      shape: MaterialStateProperty.all(StadiumBorder())),
                 )
               ],
             )
