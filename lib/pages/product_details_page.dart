@@ -39,6 +39,13 @@ class ProductDetails extends StatelessWidget {
                         .bold
                         .make(),
                     12.heightBox,
+                    "Ex aliqua ut mollit aute consequat ut commodo voluptate. Nostrud consectetur voluptate in nisi ea nulla consequat veniam elit excepteur sit. Pariatur culpa minim incididunt dolore consectetur eu cupidatat consequat aliqua. Cupidatat eiusmod ex et sit sint. Adipisicing labore dolore eu amet in labore nulla cupidatat aliquip enim."
+                        .text
+                        .textStyle(context.captionStyle)
+                        .align(TextAlign.justify)
+                        .make()
+                        .p16()
+                        .expand()
                   ],
                 ).py32(),
               ),
