@@ -15,7 +15,7 @@ class CatelogList extends StatelessWidget {
       padding: EdgeInsets.only(top: 20),
       itemCount: Catelog.Items.length,
       itemBuilder: (context, index) {
-        Item catelog = Catelog.getByPosition(index);
+        Item catelog = Catelog.Items[index];
         return InkWell(
             onTap: () => Navigator.push(
                 context,
@@ -51,19 +51,19 @@ class CatelogItem extends StatelessWidget {
             item.desc.text.textStyle(context.captionStyle).bold.make(),
             12.heightBox,
             ButtonBar(
-              alignment: MainAxisAlignment.spaceBetween,
+              alignment: MainAxisAlignment.spaceAround,
               children: [
                 "\$${item.price}".text.xl.bold.make(),
                 ElevatedButton(
                   onPressed: (() {}),
-                  child: "Buy".text.color(Colors.white).make(),
+                  child: "Add to Cart".text.color(Colors.white).make(),
                   style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all(MyTheme.darkBlue),
                       shape: MaterialStateProperty.all(StadiumBorder())),
                 )
               ],
-            ).pOnly(right: 8.0)
+            )
           ],
         ))
       ],
