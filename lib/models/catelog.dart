@@ -2,6 +2,11 @@
 import 'dart:convert';
 
 class Catelog {
+  static final catModel = Catelog.initiate();
+  Catelog.initiate();
+
+  factory Catelog() => catModel;
+
   static List<Item> Items = [];
 
   Item getById(num id) => Items.firstWhere((element) => element.id == id);

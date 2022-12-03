@@ -1,10 +1,13 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/cart.dart';
+import 'package:velocity_x/velocity_x.dart';
+
 import 'package:flutter_application_1/models/catelog.dart';
 import 'package:flutter_application_1/pages/product_details_page.dart';
 import 'package:flutter_application_1/utils/routes/myroutes.dart';
 import 'package:flutter_application_1/utils/themes/theme.dart';
 import 'package:flutter_application_1/widget/homeWidgets/catelog_image.dart';
-import 'package:velocity_x/velocity_x.dart';
 
 class CatelogList extends StatelessWidget {
   const CatelogList({super.key});
@@ -51,22 +54,52 @@ class CatelogItem extends StatelessWidget {
             item.desc.text.textStyle(context.captionStyle).bold.make(),
             12.heightBox,
             ButtonBar(
-              alignment: MainAxisAlignment.spaceAround,
+              alignment: MainAxisAlignment.spaceBetween,
               children: [
                 "\$${item.price}".text.xl.bold.make(),
-                ElevatedButton(
-                  onPressed: (() {}),
-                  child: "Add to Cart".text.color(Colors.white).make(),
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(MyTheme.darkBlue),
-                      shape: MaterialStateProperty.all(StadiumBorder())),
+                _AddToCart(
+                  catItem: item,
                 )
               ],
-            )
+            ).p(0)
           ],
         ))
       ],
-    )).rounded.square(150).color(Colors.white).make().p(10);
+    )).rounded.square(160).color(Colors.white).make().py(10);
+  }
+}
+
+class _AddToCart extends StatefulWidget {
+  final Item catItem;
+  const _AddToCart({
+    Key? key,
+    required this.catItem,
+  }) : super(key: key);
+
+  @override
+  State<_AddToCart> createState() => _AddToCartState();
+}
+
+class _AddToCartState extends State<_AddToCart> {
+  bool isAdded = false;
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: (() {
+        isAdded = isAdded.toggle();
+        Catelog _catelog = new Catelog();
+        CartModel _cart = new CartModel();
+
+        _cart.catelog = _catelog;
+        _cart.add(widget.catItem);
+        setState(() {});
+      }),
+      child: isAdded
+          ? Icon(Icons.done)
+          : "Add to Cart".text.color(Colors.white).make(),
+      style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(MyTheme.darkBlue),
+          shape: MaterialStateProperty.all(StadiumBorder())),
+    );
   }
 }

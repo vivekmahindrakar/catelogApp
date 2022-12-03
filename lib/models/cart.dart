@@ -1,6 +1,11 @@
 import 'package:flutter_application_1/models/catelog.dart';
 
 class CartModel {
+  static final cartModel = CartModel.initiate();
+  CartModel.initiate();
+
+  factory CartModel() => cartModel;
+
   Catelog _catelog = new Catelog();
 
   Catelog get catelog => _catelog;
