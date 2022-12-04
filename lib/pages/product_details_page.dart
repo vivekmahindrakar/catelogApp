@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import "package:flutter/material.dart";
 import 'package:flutter_application_1/utils/themes/theme.dart';
+import 'package:flutter_application_1/widget/homeWidgets/add_to_cart.dart';
 import "package:velocity_x/velocity_x.dart";
 
 import '../models/catelog.dart';
@@ -59,7 +60,7 @@ class ProductDetails extends StatelessWidget {
           "\$${item.price}".text.xl2.bold.make(),
           ElevatedButton(
             onPressed: (() {}),
-            child: "Buy".text.color(Colors.white).make(),
+            child: AddToCart(catItem: item),
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(MyTheme.darkBlue),
                 shape: MaterialStateProperty.all(StadiumBorder())),

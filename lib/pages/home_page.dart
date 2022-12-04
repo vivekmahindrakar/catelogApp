@@ -11,10 +11,8 @@ import 'package:flutter/services.dart';
 
 import 'package:flutter_application_1/models/catelog.dart';
 import 'package:flutter_application_1/utils/themes/theme.dart';
-import 'package:flutter_application_1/widget/drawer.dart';
 
 import '../widget/homeWidgets/header.dart';
-import '../widget/item_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
