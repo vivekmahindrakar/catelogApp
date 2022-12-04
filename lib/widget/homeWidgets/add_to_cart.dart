@@ -16,14 +16,13 @@ class AddToCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    VxState.watch(context, on: [AddMutation]);
+    VxState.watch(context, on: [AddMutation, RemoveMutation]);
     CartModel _cart = (VxState.store as MyStore).cart!;
     bool isInCart = _cart.item.contains(catItem);
     return ElevatedButton(
       onPressed: (() {
         if (!isInCart) {
           AddMutation(catItem);
-          //setState(() {});
         }
       }),
       child: isInCart ? Icon(Icons.done) : Icon(CupertinoIcons.cart_badge_plus),
