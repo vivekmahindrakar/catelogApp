@@ -6,7 +6,7 @@ class CartModel {
 
   factory CartModel() => cartModel;
 
-  Catelog _catelog = new Catelog();
+  Catelog _catelog = Catelog();
 
   Catelog get catelog => _catelog;
 
