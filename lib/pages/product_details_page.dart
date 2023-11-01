@@ -58,13 +58,7 @@ class ProductDetails extends StatelessWidget {
         alignment: MainAxisAlignment.spaceBetween,
         children: [
           "\$${item.price}".text.xl2.bold.make(),
-          ElevatedButton(
-            onPressed: (() {}),
-            child: AddToCart(catItem: item),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(MyTheme.darkBlue),
-                shape: MaterialStateProperty.all(StadiumBorder())),
-          ).wh(100, 50)
+          AddToCart(catItem: item).wh(100, 50)
         ],
       )
           .pOnly(right: 8.0, bottom: 16, left: 8)

@@ -19,9 +19,9 @@ class CartModel {
   }
 
   List<num> get setTtemIds => _itemIds;
-  set itemIds(int id) {
-    _itemIds.add(id);
-  }
+  // set itemIds(int id) {
+  //   _itemIds.add(id);
+  // }
 
   List<Item> get item => _itemIds.map((id) => _catelog.getById(id)).toList();
 

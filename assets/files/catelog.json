@@ -50,19 +50,19 @@
         },
         {
             "id": 7,
-            "name": "Iphone 12 pro",
-            "desc": "Apple Iphone 12th gen",
-            "price": 899,
-            "color": "#FBF7F4",
-            "image": "https://img4.gadgetsnow.com/gd/images/products/additional/large/G201718_View_1/mobiles/smartphones/apple-iphone-12-pro-max-pacific-blue-128gb-.jpg"
-        },
-        {
-            "id": 8,
             "name": "Iphone 11 pro",
             "desc": "Apple Iphone 11th gen",
             "price": 999,
             "color": "#4E5851",
             "image": "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/a/f/iphone-11-pro-max-256-u-mwhm2hn-a-apple-0-original-imafkg2ftc5cze5n.jpeg?q=70"
+        },
+        {
+            "id": 8,
+            "name": "Iphone 12 pro",
+            "desc": "Apple Iphone 12th gen",
+            "price": 899,
+            "color": "#FBF7F4",
+            "image": "https://www.macworld.com/wp-content/uploads/2022/08/ios16-lift-images.jpg?resize=1200%2C800&quality=50&strip=all"
         }
     ]
 }

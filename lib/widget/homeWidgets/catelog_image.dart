@@ -10,6 +10,12 @@ class CatelogImage extends StatelessWidget {
   final Item item;
   @override
   Widget build(BuildContext context) {
-    return Image.network(item.image).box.rounded.p12.make().w32(context).p(10);
+    return Image.network(item.image)
+        .box
+        .rounded
+        .p12
+        .make()
+        .wPCT(context: context, widthPCT: context.isMobile ? 32 : 20)
+        .p(10);
   }
 }
